@@ -1,0 +1,80 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import 'single';
+
+* {
+    margin: 0;
+    padding: 0;
+  
+    body {
+        background: #1b1b1b;
+        
+        .card-container {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 25px 50px;
+        
+            .new {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: -35px;
+                left: 25px;
+                background: #FFF;
+                border-radius: 50%;
+                padding: 0 7px;
+                $font-family-sans-serif: 'Nunito', sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+            }
+
+            .article-container {
+                border: 2px #CCC solid;
+                width: calc(100% / 4 - 30px);
+                padding: 2em;
+                border-radius: 20px;
+                box-shadow: 9px 7px 2px #eee;
+                background: #FFF;
+                margin: 15px;
+                position: relative;
+
+                #article-desc {
+                    margin-top: 80px;
+                }
+
+                #article-date {
+                    position: absolute;
+                    bottom: 5px;
+                    right: 10px;
+                }
+
+                #article-tools {
+                    position:absolute;
+                    bottom: 10px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
+
+.white {
+    color: #FFF;
+}
+  
+.disabled {
+    cursor: default;
+}
+  
+.denied {
+    cursor: not-allowed;
+}
+  

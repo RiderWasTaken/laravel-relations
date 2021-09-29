@@ -1,0 +1,49 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 50px;
+
+    .single-container {
+        border: 2px #CCC solid;
+        width: 50%;
+        padding: 2em;
+        border-radius: 20px;
+        box-shadow: 9px 7px 2px #eee;
+        background: #FFF;
+        margin: 15px;
+        position: relative;
+
+        #single-title, #single-subtitle {
+            text-align: center;
+        }
+
+        #single-desc {
+            margin-top: 25px;
+            text-align: justify;
+        }
+
+        #single-date {
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+        }
+
+        #single-tools {
+            .back-to {
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                top: 325px;
+                right: 0;
+                background: #FFF;
+                border-radius: 25px;
+                padding: 5px 15px;
+                width: 130px;
+                $font-family-sans-serif: 'Nunito', sans-serif;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+}
